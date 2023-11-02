@@ -1,4 +1,5 @@
 import "./App.scss";
+import Contact from "./Components/contact/Contact";
 import Lautaro from "./Components/lautaro/Lautaro";
 import Navbar from "./Components/navbar/Navbar";
 import Parrallax from "./Components/parrallax/Parrallax";
@@ -23,7 +24,9 @@ function App() {
         <Parrallax tpe="portfolio" />
       </section>
       <Portfolio />
-      <section id="Contact">Contacto</section>
+      <section id="Contact">
+        <Contact />
+      </section>
       {/* <Test /> */}
     </>
   );

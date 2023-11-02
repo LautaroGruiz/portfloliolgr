@@ -1,6 +1,6 @@
 .navbar {
     height:  50px;
-    border: 1px solid saddlebrown;
+    // border: 1px solid saddlebrown;
     .wrapper {
         max-width: 1000px;
         height: 100%;
@@ -8,7 +8,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border: 1px seagreen solid;
+        // border: 1px seagreen solid;
     }
     span {
         font-weight: bold;
@@ -16,6 +16,6 @@
     .social {
         display: flex;
         gap: 20px;
-        border: 1px solid skyblue;
+        // border: 1px solid skyblue;
     }
 }
