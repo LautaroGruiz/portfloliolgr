@@ -2,6 +2,7 @@ import "./App.scss";
 import Lautaro from "./Components/lautaro/Lautaro";
 import Navbar from "./Components/navbar/Navbar";
 import Parrallax from "./Components/parrallax/Parrallax";
+import Services from "./Components/services/Services";
 // import Test from "./Components/test/Test";
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
       <section id="Services">
         <Parrallax type="services" />
       </section>
-      <section>Servicios</section>
+      <section>
+        <Services />
+      </section>
       <section id="Portfolio">
         <Parrallax tpe="portfolio" />
       </section>
