@@ -7,25 +7,29 @@ const items = [
     id: 1,
     title: "Resto Code",
     img: "src/Image/RestoCode.png",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam laboreamet reiciendis sapiente modi quae cumque impedit incidunt",
+    desc: "Proyecto de aplicación web centrada en la experiencia de un Bar/Restobar, ofreciendo a los clientes la posibilidad de realizar reservas para sus visitas. Además, los administradores cuentan con acceso adicional, lo que les permite gestionar eficazmente el funcionamiento del establecimiento, como la gestión de menús, horarios y reservas. ",
+    link: "https://restocode.netlify.app",
   },
   {
     id: 2,
     title: "TaTeTi",
     img: "src/Image/TaTeTi.png",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam laboreamet reiciendis sapiente modi quae cumque impedit incidunt",
+    desc: "El juego clásico de Tateti, conocido también como Tres en Línea, es un juego de estrategia donde dos jugadores se enfrentan en un tablero de 3x3.  Es un juego sencillo pero desafiante que requiere planificación y anticipación para ganar a tu oponente",
+    link: "https://tatetibylgr.netlify.app",
   },
   {
     id: 3,
     title: "Explosive Road",
     img: "src/Image/ExplosiveRoad.png",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam laboreamet reiciendis sapiente modi quae cumque impedit incidunt",
+    desc: "Videojuego en 2D con múltiples niveles, en el que al desviarte del camino designado, comienzas de nuevo y pierdes una vida. Además, cuentas con un cronómetro que registra tu tiempo récord y te desafía a superarlo en cada intento.",
+    link: "https://explosiveroad.netlify.app",
   },
   {
     id: 4,
     title: "Prodigy Pc",
     img: "src/Image/ProdigyPc.png",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam laboreamet reiciendis sapiente modi quae cumque impedit incidunt",
+    desc: "Proyecto de comercio electrónico en línea especializado en periféricos de PC, con una cuenta de administrador que permite la creación, edición y eliminación de productos. Además, podrás filtrar los productos según tus preferencias.",
+    link: "https://prodigypc.netlify.app/index.html",
   },
 ];
 
@@ -46,10 +50,12 @@ const Single = ({ item }) => {
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{y}}>
+          <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>Ver web</button>
+            <button>
+              <a href={item.link}>Ver web</a>
+            </button>
           </motion.div>
         </div>
       </div>

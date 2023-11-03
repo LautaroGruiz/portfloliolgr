@@ -10,21 +10,21 @@ import Services from "./Components/services/Services";
 function App() {
   return (
     <>
-      <section id="Homepage">
+      <section id="Inicio">
         <Navbar />
         <Lautaro />
       </section>
-      <section id="Services">
+      <section>
         <Parrallax type="services" />
       </section>
-      <section>
+      <section id="Servicios">
         <Services />
       </section>
-      <section id="Portfolio">
-        <Parrallax tpe="portfolio" />
+      <section id="Portafolio">
+        <Parrallax type="portfolio" />
       </section>
       <Portfolio />
-      <section id="Contact">
+      <section id="Contacto">
         <Contact />
       </section>
       {/* <Test /> */}

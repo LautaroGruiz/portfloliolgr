@@ -25,7 +25,7 @@ const Parrallax = ({ type }) => {
       }}
     >
       <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "¿Que hacemos?" : "Lo que hicimos"}
+        {type === "services" ? "¿Qué te ofrezco?" : "¿Quieres ver mis trabajos?"}
       </motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div

@@ -29,8 +29,6 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
-      //   animate="animate"
-      // whileInView="animate"
       ref={ref}
       animate={isInView && "animate"}
     >
@@ -45,16 +43,16 @@ const Services = () => {
         <div className="tittle">
           <img src="src\Image\people.png" alt="" />
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Soluciones</motion.b>{" "}
-            unicas
+            <motion.b whileHover={{ color: "rebeccapurple" }}>Soluciones</motion.b>{" "}
+            únicas
           </h1>
         </div>
         <div className="tittle">
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Para tu</motion.b>{" "}
+            <motion.b whileHover={{ color: "rebeccapurple" }}>Para tu</motion.b>{" "}
             negocio.
           </h1>
-          <button>¿Qué hacemos?</button>
+          <button>¿Cómo puedo ayudarte?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -62,49 +60,47 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Marca</h2>
+          <h2>Diseño</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-            placeat, eius debitis sequi reprehenderit deserunt quo nesciunt
-            
+            Creatividad y experiencia en diseño web se unen para dar vida a tus
+            ideas. Interfaces que cautivan a tus visitantes desde el
+            primer momento.
           </p>
-          <button>Ir</button>
+          {/* <button>Ir</button> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Marca</h2>
+          <h2>Desarrollo</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-            placeat, eius debitis sequi reprehenderit deserunt quo nesciunt
-            
+            Con un enfoque en la programación y la tecnología, creao sitios web
+            sólidos, eficientes que se adaptan a tus necesidades y objetivos.
           </p>
-          <button>Ir</button>
+          {/* <button>Ir</button> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Marca</h2>
+          <h2>Orientado al cliente</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-            placeat, eius debitis sequi reprehenderit deserunt quo nesciunt
-            
+            Trabajando codo a codo contigo para garantizar que tu visión se
+            convierta en un sitio web excepcional. Ser un socio confiable.
           </p>
-          <button>Ir</button>
+          {/* <button>Ir</button> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Marca</h2>
+          <h2>Mantenimiento</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-            placeat, eius debitis sequi reprehenderit deserunt quo nesciunt
-            
+            Servicios de mantenimiento continuo para asegurarnos de
+            que tu sitio web esté siempre en su mejor forma, con
+            actualizaciones.
           </p>
-          <button>Ir</button>
+          {/* <button>Ir</button> */}
         </motion.div>
       </motion.div>
     </motion.div>

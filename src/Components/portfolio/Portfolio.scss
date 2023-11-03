@@ -6,11 +6,11 @@
         left: 0;
         padding-top: 50px;
         text-align: center;
-        color: orange;
         font-size: 30px;
+        letter-spacing: 1px;
             .progressBar {
-                height: 6px;
-                background-color: white;
+                height: 1.9px;
+                background-color: rebeccapurple;
             }
     }
     .container{
@@ -21,16 +21,18 @@
     height: 100%;
     overflow: hidden;
         .wrapper {
-          max-width: 1000px;
+          max-width: 1200px;
           height: 100%;
           margin: auto;
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 50px;  
+        //   border: 1px solid seagreen;
             .imageContainer {
                 flex:1;
-                height: 50%;
+                height: 42%;
+                // border: 1px solid seagreen;
                 img {
                     width: 100%;
                     height: 100%;
@@ -43,20 +45,31 @@
                flex-direction: column;
                gap: 30px;
                     h2 {
-                       font-size: 72px; 
+                       font-size: 50px; 
                     }
                     p {
                        color: gray;
                        font-size: 18px;
                     }
                     button {
-                       background-color: orange;
-                       border: none;
+                       background-color: rebeccapurple;
                        border-radius: 10px;
                        padding: 10px;
                        width: 200px;
                        cursor: pointer;
                        font-size: 17.5px;
+                       transition: 0.2s;
+                       border: 1px solid #0c0c1d;
+                       a {
+                        // background-color: black;
+                        padding-left: 55px;
+                        padding-right: 55px;
+                        color: white;
+                       }
+                    }
+                    button:hover {
+                        background-color: #0c0c1d;
+                        border: 1px solid rebeccapurple;
                     }
             }
         }

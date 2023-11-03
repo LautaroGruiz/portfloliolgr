@@ -37,6 +37,22 @@ const sliderVariants = {
   },
 };
 
+const downloadPDF = () => {
+  // Ruta o URL de tu archivo PDF
+  const pdfURL = "/src/Image/Gonzalez Ruiz Lautaro CV.pdf";
+
+  // Crea un elemento "a" para simular un enlace de descarga
+  const downloadLink = document.createElement("a");
+  downloadLink.href = pdfURL;
+  downloadLink.download = "Gonzalez Ruiz Lautaro CV.pdf"; // Nombre del archivo descargado
+  downloadLink.click();
+};
+
+const scrollToSection = () => {
+  const section = document.getElementById("Contacto");
+  section.scrollIntoView({ behavior: "smooth" });
+};
+
 const Lautaro = () => {
   return (
     <div className="lautaro">
@@ -53,10 +69,12 @@ const Lautaro = () => {
             en experiencia de usuario e interfaces web.
           </motion.h2>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
+            <motion.button variants={textVariants} onClick={downloadPDF}>
               Curriculum vitae
             </motion.button>
-            <motion.button variants={textVariants}>Contactame</motion.button>
+            <motion.button variants={textVariants} onClick={scrollToSection}>
+              Contáctame
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}

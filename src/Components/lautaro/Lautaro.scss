@@ -7,7 +7,7 @@ position: relative;
     max-width: 1000px;
     height: 100%;
     margin: auto;
-    border: 1px solid rgb(255, 251, 0);
+    // border: 1px solid rgb(255, 251, 0);
     .textContainer {
         width: 60%;
         height: 100%;
@@ -20,20 +20,25 @@ position: relative;
         letter-spacing: 1px;
         }
         h1{
-        font-size: 30px;
+        font-size: 35px;
         color: rebeccapurple;
         letter-spacing: 5px;
         } 
         .buttons {
         button {
           padding: 15px;
-          border: 1px solid white;
+          border: 1px solid rebeccapurple;
           border-radius: 10px;
           background-color: transparent;
           color: white;
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300px;
+          font-size: 1rem;
+          transition: 0.2s;
+          }
+          button:hover {
+          border: 1px solid white;
           }
         }
         img {
@@ -46,16 +51,16 @@ position: relative;
     position: absolute;
     top: 0;
     right: 0;
-    padding-top: 11.7rem;
-    border: 1px solid seagreen;
+    padding-top: 11.9rem;
+    // border: 1px solid seagreen;
         img {
         width: 90%;
         }
     }
     .slindingTextContainer {
     position: absolute;
-    font-size: 50vh;
-    bottom: -120px;
+    font-size: 35vh;
+    bottom: -65px;
     white-space: nowrap;
     color: #ffffff09;
     width: 50%;

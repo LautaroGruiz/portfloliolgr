@@ -66,8 +66,8 @@ const Contact = () => {
           <span>www.linkedin.com/in/lautagruiz</span>
         </motion.div>
         <motion.div className="item" varianst={varianst}>
-          <h2>Ubicacion</h2>
-          <span>Tucuman, Argentina</span>
+          <h2>Modalidad</h2>
+          <span>Remoto - Full Time</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
