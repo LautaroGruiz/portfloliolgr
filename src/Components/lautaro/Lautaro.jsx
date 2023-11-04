@@ -1,7 +1,7 @@
 import "./Lautaro.scss";
 import { motion } from "framer-motion";
-import {lautaroFoto} from "../../Image/LautaroFoto.png"
-import {scroll} from "../../Image/scroll.png"
+import lautaroFoto from "../../Image/LautaroFoto.png"
+import scroll from "../../Image/scroll.png"
 
 
 const textVariants = {

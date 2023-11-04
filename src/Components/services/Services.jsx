@@ -1,7 +1,7 @@
 import "./Services.scss";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import {people} from "../../Image/people.png"
+import people from "../../Image/people.png"
 
 const variants = {
   initial: {

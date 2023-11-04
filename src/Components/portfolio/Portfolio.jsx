@@ -1,10 +1,10 @@
 import "./Portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useRef } from "react";
-import { restoCode } from "../../Image/RestoCode.png";
-import { tateti } from "../../Image/TaTeTi.png";
-import { explosiveroad } from "../../Image/ExplosiveRoad.png";
-import { prodigy } from "../../Image/ProdigyPc.png";
+import  useRef  from "react";
+import  restoCode  from "../../Image/RestoCode.png";
+import  tateti  from "../../Image/TaTeTi.png";
+import  explosiveroad  from "../../Image/ExplosiveRoad.png";
+import  prodigy  from "../../Image/ProdigyPc.png";
 
 const items = [
   {
