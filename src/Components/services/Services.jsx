@@ -1,6 +1,7 @@
 import "./Services.scss";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import {people} from "../../Image/people.png"
 
 const variants = {
   initial: {
@@ -41,7 +42,7 @@ const Services = () => {
       </motion.div>
       <motion.div className="tittleContainer" variants={variants}>
         <div className="tittle">
-          <img src="src\Image\people.png" alt="" />
+          <img src={people} alt="" />
           <h1>
             <motion.b whileHover={{ color: "rebeccapurple" }}>Soluciones</motion.b>{" "}
             únicas

@@ -1,5 +1,8 @@
 import "./Lautaro.scss";
 import { motion } from "framer-motion";
+import {lautaroFoto} from "../../Image/LautaroFoto.png"
+import {scroll} from "../../Image/scroll.png"
+
 
 const textVariants = {
   initial: {
@@ -79,7 +82,7 @@ const Lautaro = () => {
           <motion.img
             variants={textVariants}
             animate="scrollButton"
-            src="src\Image\scroll.png"
+            src={scroll}
           />
         </motion.div>
       </div>
@@ -92,7 +95,7 @@ const Lautaro = () => {
         Front-End Developer
       </motion.div>
       <div className="imageContainer">
-        <img src="src\Image\LautaroFoto.png" alt="" />
+        <img src={lautaroFoto} alt="" />
       </div>
     </div>
   );
