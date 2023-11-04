@@ -1,6 +1,11 @@
+@import "../../App.scss";
 .navbar {
     height:  50px;
     // border: 1px solid saddlebrown;
+    @include mobile {
+        height: 70px;
+        padding-top: 18px;
+    }
     .wrapper {
         max-width: 1000px;
         height: 100%;
@@ -9,10 +14,17 @@
         align-items: center;
         justify-content: space-between;
         font-size: 1.5rem;
+        @include mobile {
+            justify-content: flex-end;
+            padding: 20px;
+        }
         // border: 1px seagreen solid;
     }
     span {
         font-weight: bold;
+        @include mobile {
+            display: none;
+        }
     }
     .social {
         display: flex;
@@ -27,3 +39,4 @@
             }
     }
 }
+

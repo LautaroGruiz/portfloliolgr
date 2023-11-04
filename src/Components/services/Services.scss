@@ -1,3 +1,4 @@
+@import "../../App.scss";
 .services {
   background-color: linear-gradient(180deg, #0c0c1d, #111132);
   height: 100%;
@@ -11,16 +12,33 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        // border: 1px solid saddlebrown;
+            @include mobile {
+                width: 100%;
+                flex: 0;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
             p {
               font-weight: 200;
               font-size: 17px;
               color: gray;
               text-align: right;
+              @include mobile {
+                text-align: center;
+                font-size: 15px;
+            }
             }
             hr {
               width: 300px;
               border: none;
               border-top: 0.5px solid gray;
+              @include mobile {
+                width: 300px;
+              }
             }
     }
     .tittleContainer{
@@ -28,19 +46,34 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+            @include mobile {
+                width: 100%;
+            }
             .tittle {
               display: flex;
               align-items: center;
-              gap: 50px;   
+              gap: 50px;  
+                @include mobile {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 20px;
+                }
                 img{
                     width: 225px;
                     height: 60px;
                     border-radius: 50px;
                     object-fit: cover;
+                    @include mobile {
+                        width: 210px;
+                        height: 55px;
+                    }
                 }
                 h1 {
                     font-size: 56px;
                     font-weight: 1;
+                    @include mobile {
+                        font-size: 36px;
+                    }
                 }
                 button {
                     width: 225px;
@@ -52,6 +85,11 @@
                     cursor: pointer;
                     transition: 0.2s;
                     border: none;
+                    @include mobile {
+                        font-size: 16px;
+                        width: 200px;
+                        height: 50px;
+                    }
                 }
                 button:hover{
                     background-color: #0c0c1d;
@@ -67,6 +105,12 @@
         margin: auto;
         gap: 10px;
         margin-bottom: 1rem;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 18px;
+        }
             .box {
                 width: 260px;
                 padding: 20px;
@@ -74,8 +118,23 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
+                @include mobile {
+                    padding: 10px;
+                    width: 80%;
+                    text-align: center;
+                }
+                    h2 {
+                        @include mobile {
+                            font-size: 18px;
+                            padding-bottom: 6px;
+                        }
+                    }
                     p {
                         font-size: 16.8px;
+                        @include mobile {
+                            font-size: 14.6px;
+
+                        }
                     }
                     button {
                         padding: 7px;
