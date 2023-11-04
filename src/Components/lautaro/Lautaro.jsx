@@ -42,7 +42,7 @@ const sliderVariants = {
 
 const downloadPDF = () => {
   // Ruta o URL de tu archivo PDF
-  const pdfURL = "/src/Image/Gonzalez Ruiz Lautaro CV.pdf";
+  const pdfURL = "/src/public/Gonzalez Ruiz Lautaro CV.pdf";
 
   // Crea un elemento "a" para simular un enlace de descarga
   const downloadLink = document.createElement("a");
