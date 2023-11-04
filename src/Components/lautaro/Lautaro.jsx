@@ -1,8 +1,8 @@
 import "./Lautaro.scss";
 import { motion } from "framer-motion";
-import lautaroFoto from "../../Image/LautaroFoto.png"
-import scroll from "../../Image/scroll.png"
-
+import lautaroFoto from "../../Image/LautaroFoto.png";
+import scroll from "../../Image/scroll.png";
+import cv from "../../public/Gonzalez Ruiz Lautaro CV.pdf";
 
 const textVariants = {
   initial: {
@@ -40,17 +40,6 @@ const sliderVariants = {
   },
 };
 
-const downloadPDF = () => {
-  // Ruta o URL de tu archivo PDF
-  const pdfURL = "/src/public/Gonzalez Ruiz Lautaro CV.pdf";
-
-  // Crea un elemento "a" para simular un enlace de descarga
-  const downloadLink = document.createElement("a");
-  downloadLink.href = pdfURL;
-  downloadLink.download = "Gonzalez Ruiz Lautaro CV.pdf"; // Nombre del archivo descargado
-  downloadLink.click();
-};
-
 const scrollToSection = () => {
   const section = document.getElementById("Contacto");
   section.scrollIntoView({ behavior: "smooth" });
@@ -72,8 +61,8 @@ const Lautaro = () => {
             en experiencia de usuario e interfaces web.
           </motion.h2>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants} onClick={downloadPDF}>
-              Curriculum vitae
+            <motion.button variants={textVariants}>
+              <a href={cv}>Curriculum vitae</a>
             </motion.button>
             <motion.button variants={textVariants} onClick={scrollToSection}>
               Contáctame
