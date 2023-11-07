@@ -57,7 +57,7 @@ const Services = () => {
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
-        <motion.div
+        {/* <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
@@ -67,7 +67,6 @@ const Services = () => {
             ideas. Interfaces que cautivan a tus visitantes desde el
             primer momento.
           </p>
-          {/* <button>Ir</button> */}
         </motion.div>
         <motion.div
           className="box"
@@ -78,7 +77,6 @@ const Services = () => {
             Con un enfoque en la programación y la tecnología, creao sitios web
             sólidos, eficientes que se adaptan a tus necesidades y objetivos.
           </p>
-          {/* <button>Ir</button> */}
         </motion.div>
         <motion.div
           className="box"
@@ -89,7 +87,6 @@ const Services = () => {
             Trabajando codo a codo contigo para garantizar que tu visión se
             convierta en un sitio web excepcional. Ser un socio confiable.
           </p>
-          {/* <button>Ir</button> */}
         </motion.div>
         <motion.div
           className="box"
@@ -101,8 +98,7 @@ const Services = () => {
             que tu sitio web esté siempre en su mejor forma, con
             actualizaciones.
           </p>
-          {/* <button>Ir</button> */}
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </motion.div>
   );
