@@ -1,6 +1,5 @@
 .navbar {
     height:  50px;
-    // border: 1px solid saddlebrown;
     .wrapper {
         max-width: 1000px;
         height: 100%;
@@ -9,7 +8,6 @@
         align-items: center;
         justify-content: space-between;
         font-size: 1.5rem;
-        // border: 1px seagreen solid;
     }
     span {
         font-weight: bold;
@@ -18,7 +16,6 @@
         display: flex;
         gap: 20px;
         margin-top: 12px;
-        // border: 1px solid skyblue;
             .bi-linkedin, .bi-github {
                 transition: 0.2s;
             }

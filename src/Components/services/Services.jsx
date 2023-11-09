@@ -57,7 +57,7 @@ const Services = () => {
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
-        {/* <motion.div
+        <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
@@ -89,7 +89,7 @@ const Services = () => {
           </p>
         </motion.div>
         <motion.div
-          className="box"
+          className="box mantenimiento"
           whileHover={{ background: "lightgray", color: "black" }}
         >
           <h2>Mantenimiento</h2>
@@ -98,7 +98,7 @@ const Services = () => {
             que tu sitio web esté siempre en su mejor forma, con
             actualizaciones.
           </p>
-        </motion.div> */}
+        </motion.div>
       </motion.div>
     </motion.div>
   );

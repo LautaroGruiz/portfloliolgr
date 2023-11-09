@@ -61,9 +61,11 @@ const Lautaro = () => {
             en experiencia de usuario e interfaces web.
           </motion.h2>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              <a href={cv}>Curriculum vitae</a>
-            </motion.button>
+            <a href={cv}>
+              <motion.button href={cv} variants={textVariants}>
+                Curriculum vitae
+              </motion.button>
+            </a>
             <motion.button variants={textVariants} onClick={scrollToSection}>
               Contáctame
             </motion.button>
